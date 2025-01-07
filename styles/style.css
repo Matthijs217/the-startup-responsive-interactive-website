@@ -1,0 +1,28 @@
+body {
+    /* COLORS */
+    --main-color: #00716b;
+    --main-color-dark: #004C4C;
+    --main-color-light: #EDF7F7;
+    --secondary-color: #ffd200;
+
+    --main-color-hover: #00857a;
+
+
+    --text-color-white: #fff;
+    --text-color-black: #222;
+
+    /* FONTS */
+
+    --font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+    --font-size-base: 1.25rem;
+    --font-size-medium: 2rem;
+    --font-size-large: 3.5rem;
+    --font-weight: 400;
+    --line-heigth: 1.5;
+
+    --button-bg: var(--main-color);
+    --button-color: var(--text-color-white);
+    --button-padding: var(12px 16px);
+    --button-width: 192px;
+
+}
