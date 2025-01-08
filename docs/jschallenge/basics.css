@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    --opacity: .5;
+    position: relative;
+    transition: .25s;
+    opacity: var(--opacity);
+}
+
+p.moveit {
+    --opacity: 1;
+    left: 20em;
+}
