@@ -57,7 +57,7 @@ header {
 }
 
 .topnav {
-    height: 10vh;
+    height: 15vh;
     width: 100vw;
     position: relative;
     background-color: var(--bg-color-white);
@@ -76,6 +76,8 @@ header {
     height: 100px;
     width: 150px;
     margin-left: 2vw;
+    object-fit: cover;
+
 }
 
 .login {
@@ -90,11 +92,23 @@ header {
 
 .bottomnav {
     background-color: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.logo {
-    object-fit: cover;
-    height: 100px;
+.bottomnav details {
+    color: var(--text-color-white);
+    cursor: pointer;
+}
+
+.bottomnav details a {
+    color: var(--text-color-white);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bottomnav details[open] {
+    background-color: linear-gradient(90deg, var(--main-color), var(--main-color-dark));
 }
 
 main {
