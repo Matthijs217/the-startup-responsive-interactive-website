@@ -45,7 +45,7 @@ body {
 }
 
 body {
-    background-color: wheat;
+    background-color: #F9F9F9;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -95,5 +95,29 @@ header {
 .logo {
     object-fit: cover;
     height: 100px;
+}
+
+main {
+    background-color: white;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+main h1 {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight);
+    color: var(--main-color);
+    margin-top: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 85vw;
 }
 
