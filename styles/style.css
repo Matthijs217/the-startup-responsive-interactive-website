@@ -1,8 +1,8 @@
 body {
     /* COLORS */
     --main-color: #00716b;
-    --main-color-dark: #004C4C;
-    --main-color-light: #EDF7F7;
+    --main-color-light: #17928c;
+    --main-color-dark: #0b7774;
     --secondary-color: #ffd200;
 
     --bg-color-white: #fff;
@@ -139,8 +139,6 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-
-
 .logo {
     object-fit: cover;
     height: 100px;
@@ -148,4 +146,12 @@ summary::-webkit-details-marker {
 
 main {
     margin-left: 2vw;
+}
+
+aside {
+    background-color: var(--main-color-light);
+}
+
+footer {
+    background-color: var(--main-color-dark);
 }
