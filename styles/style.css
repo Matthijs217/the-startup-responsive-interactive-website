@@ -45,7 +45,7 @@ body {
 }
 
 body {
-    background-color: wheat;
+    background-color: #F9F9F9;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -57,7 +57,7 @@ header {
 }
 
 .topnav {
-    height: 8vh;
+    height: 10vh;
     width: 100vw;
     position: relative;
     background-color: var(--bg-color-white);
@@ -79,6 +79,8 @@ header {
     height: 100px;
     width: 150px;
     margin-left: 2vw;
+    object-fit: cover;
+
 }
 
 .login {
@@ -93,45 +95,13 @@ header {
 
 .bottomnav {
     background-color: var(--main-color);
-}
-
-.bottomnav ul {
     display: flex;
-    gap: 1em;
-    overflow-x: auto;
-    white-space: nowrap;
     justify-content: space-evenly;
-    list-style-type: none;
-    padding: 1em;
 }
 
-.bottomnav ul a {
-    color: var(--text-color-white);
-    text-decoration: none;
-    font-weight: var(--font-weight);
-}
-
-.bottomnav ul::-webkit-scrollbar {
-    height: 8px; /* Scrollbar grootte */
-}
-
-.bottomnav ul::-webkit-scrollbar-thumb {
-    background: #d3d3d3; /* Scrollbar kleur */
-}
-
-#search-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px 0;
-}
-
-.search-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 5px;
+.logo {
+    object-fit: cover;
+    height: 100px;
 }
 
 main {
