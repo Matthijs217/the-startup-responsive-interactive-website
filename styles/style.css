@@ -57,7 +57,7 @@ header {
 }
 
 .topnav {
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     position: relative;
     background-color: var(--bg-color-white);
@@ -67,6 +67,9 @@ header {
     position: absolute;
     top: 10%;
     right: 5%;
+    padding: 10px;
+    width: px;
+    text-align: left;
     background: none;
     border: none;
     color: var(--text-color-black);
@@ -92,8 +95,45 @@ header {
     background-color: var(--main-color);
 }
 
-.logo {
-    object-fit: cover;
-    height: 100px;
+.bottomnav ul {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 1em;
 }
 
+.bottomnav ul a {
+    color: var(--text-color-white);
+    text-decoration: none;
+    font-weight: var(--font-weight);
+}
+
+.bottomnav ul::-webkit-scrollbar {
+    height: 8px; /* Scrollbar grootte */
+}
+
+.bottomnav ul::-webkit-scrollbar-thumb {
+    background: #d3d3d3; /* Scrollbar kleur */
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+main {
+    margin-left: 2vw;
+}
