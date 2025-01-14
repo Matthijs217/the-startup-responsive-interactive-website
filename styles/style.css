@@ -57,9 +57,9 @@ header {
 }
 
 .topnav {
-    height: 10vh;
     width: 100vw;
     position: relative;
+    display: flex;
     background-color: var(--bg-color-white);
 }
 
@@ -97,6 +97,7 @@ header {
     background-color: var(--main-color);
     display: flex;
     justify-content: space-evenly;
+    overflow-x: auto;
 }
 
 a {
@@ -113,7 +114,7 @@ a {
     }
 }
 
-details summary:nth-of-type(1) {
+.bottomnav summary:nth-of-type(1) {
     color: var(--text-color-white);
     cursor: pointer;
     list-style: none;
