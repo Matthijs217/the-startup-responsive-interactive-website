@@ -191,7 +191,7 @@ dialog[open] {
     margin: 0;  
     transform: translateX(-100%);
     left: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
   }

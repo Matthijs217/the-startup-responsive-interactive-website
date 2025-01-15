@@ -8,5 +8,13 @@ showButton.addEventListener('click', () => {
 }); 
 
 closeButton.addEventListener('click', () => {
+  dialog.close();
+  dialog.classList.remove('visible');
+});
+
+document.body.addEventListener('click', (event) => {
+  if (event.target === dialog) {
     dialog.close();
-    });
+    dialog.classList.remove('visible');
+  }
+});
