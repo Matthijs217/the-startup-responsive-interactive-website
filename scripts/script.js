@@ -1,6 +1,6 @@
 const dialog = document.querySelector('dialog');
 const showButton = document.querySelector('.showPreference');
-const closeButton = document.querySelector('dialog button');
+const closeButton = document.querySelector('dialog .closeDialog');
 
 showButton.addEventListener('click', () => {
   dialog.showModal();

@@ -17,8 +17,8 @@ body {
     /* FONTS */
 
     --font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
-    --font-size-base: 1.25rem;
-    --font-size-medium: 2rem;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.8rem;
     --font-size-large: 3.5rem;
     --font-weight: 400;
     --line-heigth: 1.5;
@@ -150,10 +150,17 @@ summary::-webkit-details-marker {
 main {
     margin-left: 2vw;
     position: relative;
+    & h1 {
+        font-size: var(--font-size-medium);
+        font-weight: 600;
+    }
 }
 
 .container {
     position: relative;
+    & p {
+        font-size: var(--font-size-small);
+    }
 }
 
 .showPreference {
@@ -179,29 +186,69 @@ dialog {
     background-color: var(--main-color);
     width: max-content;
     height: max-content;
+    position: relative;
+    overflow: visible;
+    border: none;
+    border-radius: 2vh;
+    color: var(--text-color-white);
     &.visible {
         display: flex;
         flex-direction: column;
 
     }
+    & h4 {
+        margin: 0em 0em 1em;
+    }
 }
 
 dialog[open] {
+    
+    margin: 2em -2em;
     animation: fadein 0.2s ease-in forwards;
-    margin: 0;  
     transform: translateX(-100%);
     left: 100%;
     position: fixed;
-    top: 0;
-    right: 0;
+  }
+
+.closeDialog {
+    background-color: var(--secondary-color);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 20px;
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    cursor: pointer;
   }
 
 .toegankelijksknoppen {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    justify-content: space-evenly;
-    gap: 1em;
+    margin-bottom: 1em;
+    & img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%; 
+    }
+    & button {
+        display: inline-flex;
+        align-items: center;
+        overflow: hidden;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
 }
 
   
