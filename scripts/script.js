@@ -7,6 +7,11 @@ const darkmode = document.querySelector('.darkmode');
 const blackonwhite = document.querySelector('.blackonwhite');
 const whiteonblack = document.querySelector('.whiteonblack');
 
+const body = document.querySelector('body');
+
+const externalWindowCheck = document.querySelector('.externalWindowCheckBox');
+const reduceAnimationsCheckBox = document.querySelector('.reduceAnimationsCheckBox');
+
 
 showButton.addEventListener('click', () => {
   dialog.showModal();
@@ -29,25 +34,24 @@ document.body.addEventListener('click', (event) => {
 // Modes switchen
 
 lightmode.addEventListener('click', () => {
-  document.body.classList.add('lightmode');
-  document.body.classList.add('whiteonblack');
+  body.style.setProperty('--bg-color-white', '#fff');
+  body.style.setProperty('--text-color-black', '#222');
 });
 
 darkmode.addEventListener('click', () => {
-  document.body.classList.remove('lightmode');
-  document.body.classList.remove('whiteonblack');
+  body.style.setProperty('--bg-color-white', '#121c39'); 
+  body.style.setProperty('--main-color', '#00716b'); 
+  body.style.setProperty('--text-color-black', '#e5e5e5');
 });
 
-blackonwhite.addEventListener('click', () => {  
-  document.body.classList.remove('lightmode');
-  document.body.classList.remove('whiteonblack');
+// Als je de box hebt gechecked opent die links in een nieuw venster
+
+externalWindowCheck.addEventListener('change', () => {
+  document.addEventListener('click', (event) => {
+    if (externalWindowCheck.checked && event.target.tagName === 'A') {
+      event.preventDefault();
+      const url = event.target.href; 
+      window.open(url, '_blank');
+    }
+  });
 });
-
-whiteonblack.addEventListener('click', () => {      
-  document.body.classList.add('lightmode');
-  document.body.classList.add('whiteonblack');
-});
-
-
-
-
