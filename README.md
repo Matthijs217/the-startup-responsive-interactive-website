@@ -12,6 +12,9 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+**Ademruimte en inspringen**
+
+Ik heb in de HTML er voor gezorgd dat er voldoende witruimte is en dat alles correct [inline](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L73) of op [block](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L129-L133) level zit. 
 
 ## Bronnen
 
