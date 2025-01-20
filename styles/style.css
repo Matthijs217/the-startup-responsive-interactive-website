@@ -231,7 +231,7 @@ dialog[open] {
     transform: translateX(-100%);
     left: 100%;
     position: fixed;
-  }
+}
 
 .lightmode img {  
     &:hover {
@@ -270,7 +270,7 @@ dialog[open] {
 
     border: 1px solid black;
     cursor: pointer;
-  }
+}
 
 .toegankelijksknoppen {
     display: grid;
@@ -293,29 +293,25 @@ dialog[open] {
     }
 }
 
-  
-  @keyframes fadein{
-    0%{
+@keyframes fadein {
+    0% {
       opacity:0;
     }
-    100%{
+    100% {
       opacity:1;
     }
-  }
+}
 
 aside {
     background-color: var(--main-color-light);
     padding: 1em;
-    
-}
-
-aside h4 {
-    color: var(--text-color-white);
-}
-
-aside p {
-    color: var(--text-color-white);
-    width: 95%;
+    h4 {
+        color: var(--text-color-white);
+    }
+    p {
+        color: var(--text-color-white);
+        width: 95%;
+    }
 }
 
 footer {
@@ -325,21 +321,19 @@ footer {
     background-color: var(--main-color-dark);
     width: 100%;
     padding: 1em 0;
-}
-
-footer p {
-    display: flex;
-    margin: 0;
-    align-items: center;
-    color: var(--text-color-white);
-}
-
-footer p::after {
-    content: '';
-    width: 18px;
-    height: 10px;
-    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
-    background-size: cover;
-    margin-left: .75em;
-    transition: 0.2s;
+    p {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        color: var(--text-color-white);
+        &::after {
+            content: '';
+            width: 18px;
+            height: 10px;
+            background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+            background-size: cover;
+            margin-left: .75em;
+            transition: 0.2s;
+        }
+    }
 }
