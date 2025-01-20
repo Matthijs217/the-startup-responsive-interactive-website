@@ -18,9 +18,8 @@ Ik heb in de HTML er voor gezorgd dat er voldoende witruimte is en dat alles cor
 
 **Volgorde en nesten van CSS selectors**
 
-Ik heb ervoor gekozen om de elementen in een ander element direct te nesten in de css selectoren. Bij de elementen die gewoon los staan van alles doe ik dat niet
-https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L207-L225
-https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L80-L85
+Ik heb ervoor gekozen om de elementen in een ander element [direct te nesten](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L207-L225) in de css selectoren. Bij de elementen die gewoon [los staan](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L80-L85
+) van alles doe ik dat niet
 
 ## Bronnen
 
