@@ -5,32 +5,32 @@ body {
     --main-color-dark: #0b7774;
     --secondary-color: #ffd200;
 
-    --bg-color-white: #fff;
+    /* light en dark gebruiekn ipv -white */
+    --bg-color-white: #fff; 
 
     --main-color-hover: #00857a;
     --secondary-color-hover: #E8BF2B;
 
-
-    --text-color-white: #fff;
-    --text-color-black: #222;
+    --text-color-primary: #fff;
+    --text-color-secondary: #222;
 
     /* FONTS */
 
     --font-family: "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
     --font-size-small: 1rem;
-    --font-size-medium: 1.8rem;
+    --font-size-medium: 2.2rem;
     --font-size-large: 3.5rem;
     --font-weight: 400;
     --line-heigth: 1.5;
 
     --button-bg: var(--main-color);
-    --button-color: var(--text-color-white);
+    --button-color: var(--text-color-primary);
     --button-padding: 12px 16px;
     --button-width: 192px;
 
     background-color: var(--bg-color-white);
     font-family: var(--font-family);
-    color: var(--text-color-black);
+    color: var(--text-color-secondary);
 
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@ header {
     text-align: left;
     background: none;
     border: none;
-    color: var(--text-color-black);
+    color: var(--text-color-secondary);
 }
 
 .topnav img {
@@ -73,7 +73,7 @@ header {
     top: 50%;
     right: 5%;
     background-color: var(--secondary-color);
-    color: var(--text-color-black);
+    color: var(--text-color-secondary);
     text-decoration: none;
 }
 
@@ -85,21 +85,28 @@ header {
 }
 
 a {
-    color: var(--text-color-white);
+    color: var(--text-color-primary);
     text-decoration: none;
 }
 
 .navitems {
-    color: var(--text-color-white);
+    color: var(--text-color-primary);
     text-decoration: none;
     padding: 1em;
-    &:hover {
-        background-color: var(--main-color-dark);
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        list-style-type: none;
+        margin-top: 5vh;
+        margin-left: 5vw;
+        padding: 0;
     }
+    
 }
 
 .bottomnav summary:nth-of-type(1) {
-    color: var(--text-color-white);
+    color: var(--text-color-primary);
     cursor: pointer;
     list-style: none;
     display: flex; /* also removes the list marker */
@@ -130,18 +137,39 @@ summary::-webkit-details-marker {
 }
 
 main {
-    margin-left: 2vw;
     position: relative;
-    & h1 {
-        font-size: var(--font-size-medium);
-        font-weight: 600;
-    }
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: #F9F9F9;
 }
 
 .container {
-    position: relative;
+    background-color: var(--bg-color-white);
+    padding: 1em;
+    width: 100%;
+    & h1 {
+        font-size: var(--font-size-medium);
+        color: #005E5D;
+        font-weight: 530;
+        @media (min-width: 760px) {
+            margin-left: 10vw;
+            font-size: var(--font-size-large);
+        }
+    }
     & p {
         font-size: var(--font-size-small);
+    }
+    .content {
+        @media (min-width: 760px) {
+            margin-top: 3em;
+            justify-self: center;
+            width: 50vw;
+        }
+    }
+    @media (min-width: 760px) {
+        width: 85vw;
+        margin: 4vh 1vw 2vh 1vw;
     }
 }
 
@@ -159,7 +187,7 @@ main {
     height: 3em;
     width: 17em;
     background-color: var(--main-color);
-    color: var(--text-color-white);
+    color: var(--text-color-primary);
     font-size: 16px;
     appearance: none;
     border: none;
@@ -185,7 +213,7 @@ main {
     height: 3em;
     width: 17em;
     background-color: rgb(255, 0, 0);
-    color: var(--text-color-white);
+    color: var(--text-color-primary);
     font-size: 16px;
     appearance: none;
     border: none;
@@ -213,7 +241,7 @@ dialog {
     overflow: visible;
     border: none;
     border-radius: 2vh;
-    color: var(--text-color-white);
+    color: var(--text-color-primary);
     &.visible {
         display: flex;
         flex-direction: column;
@@ -222,32 +250,39 @@ dialog {
     & h4 {
         margin: 0em 0em 1em;
     }
+    &[open] {
+        margin: 2em -2em;
+        animation: fadein 0.2s ease-in forwards;
+        transform: translateX(-100%);
+        left: 100%;
+        position: fixed;
+    }
 }
 
-dialog[open] {
-    
-    margin: 2em -2em;
-    animation: fadein 0.2s ease-in forwards;
-    transform: translateX(-100%);
-    left: 100%;
-    position: fixed;
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 
-.lightmode img {  
-    &:hover {
+.lightmode {  
+    &:hover img {
         transform: scale(1.1);
     }
-    &.isActive {
+    img.isActive  {
         outline: 3px solid var(--secondary-color);
         outline-offset: 3px;  
     }
 }
 
-.darkmode img {
-    &:hover {
+.darkmode {
+    &:hover img {
         transform: scale(1.1);
     }
-    &.isActive {
+    img.isActive {
         outline: 3px solid var(--secondary-color);
         outline-offset: 3px;  
     }
@@ -293,23 +328,14 @@ dialog[open] {
     }
 }
 
-@keyframes fadein {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-}
-
 aside {
     background-color: var(--main-color-light);
     padding: 1em;
     h4 {
-        color: var(--text-color-white);
+        color: var(--text-color-primary);
     }
     p {
-        color: var(--text-color-white);
+        color: var(--text-color-primary);
         width: 95%;
     }
 }
@@ -325,7 +351,7 @@ footer {
         display: flex;
         margin: 0;
         align-items: center;
-        color: var(--text-color-white);
+        color: var(--text-color-primary);
         &::after {
             content: '';
             width: 18px;

@@ -5,8 +5,6 @@ const closeButton = document.querySelector('dialog .closeDialog');
 
 const lightmode = document.querySelector('.lightmode img');
 const darkmode = document.querySelector('.darkmode img');
-const blackonwhite = document.querySelector('.blackonwhite');
-const whiteonblack = document.querySelector('.whiteonblack');
 
 const body = document.querySelector('body');
 
@@ -36,7 +34,7 @@ document.body.addEventListener('click', (event) => {
 
 lightmode.addEventListener('click', () => {
   body.style.setProperty('--bg-color-white', '#fff');
-  body.style.setProperty('--text-color-black', '#222');
+  body.style.setProperty('--text-color-secondary', '#222');
   darkmode.classList.remove('isActive');
   lightmode.classList.add('isActive');
 });
@@ -44,7 +42,7 @@ lightmode.addEventListener('click', () => {
 darkmode.addEventListener('click', () => {
   body.style.setProperty('--bg-color-white', '#121c39'); 
   body.style.setProperty('--main-color', '#00716b'); 
-  body.style.setProperty('--text-color-black', '#e5e5e5');
+  body.style.setProperty('--text-color-secondary', '#e5e5e5');
   lightmode.classList.remove('isActive');
   darkmode.classList.add('isActive');
 });
@@ -61,10 +59,11 @@ externalWindowCheck.addEventListener('change', () => {
   });
 });
 
+// voorkeuren verwijderen knop
 removeButton.addEventListener('click', () => {
   externalWindowCheck.checked = false
   body.style.setProperty('--bg-color-white', '#fff');
-  body.style.setProperty('--text-color-black', '#222');
+  body.style.setProperty('--text-color-secondary', '#222');
   lightmode.classList.remove('isActive');
   darkmode.classList.remove('isActive');
 });
