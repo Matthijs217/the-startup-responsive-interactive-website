@@ -16,6 +16,11 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 Ik heb in de HTML er voor gezorgd dat er voldoende witruimte is en dat alles correct [inline](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L73) of op [block](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L129-L133) level zit. 
 
+**Volgorde en nesten van CSS selectors**
+
+Ik heb ervoor gekozen om de elementen in een ander element [direct te nesten](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L207-L225) in de css selectoren. Bij de elementen die gewoon [los staan](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L80-L85
+) van alles doe ik dat niet
+
 ## Bronnen
 
 ## Licentie
