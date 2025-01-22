@@ -4,10 +4,10 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 # ABN AMRO Toegankelijkheids pagina
 
-## Beschrijving ##
+## Beschrijving
 
-Op de ABN AMRO toegankelijkheidspagina kan je je lezen over de toeganklijkheid van de ABN AMRO. Hoe het vroeger was en nu. Ook kan je je eigen voorkeuren voor de website aanpasen. Je kan zeggen dat je de website in een donker contrast wilt of dat je links op de pagina in een nieuw venster wilt openen. 
--
+Op de ABN AMRO toegankelijkheidspagina, volledig in de huisstijl, kan je lezen over de toeganklijkheid van de ABN AMRO. Hoe het vroeger was en nu. Ook kan je je eigen voorkeuren voor de website aanpasen. Je kan zeggen dat je de website in een donker contrast wilt of dat je links op de pagina in een nieuw venster wilt openen.
+
 ![image](https://github.com/user-attachments/assets/b69a1987-8c6b-48f8-b2fa-387555314cad)
 -
 ![image](https://github.com/user-attachments/assets/16526f7e-0716-4628-a89e-fa49e4a66dad)
@@ -17,6 +17,19 @@ Bekijk [hier](https://matthijs217.github.io/the-startup-responsive-interactive-w
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+
+## Responsive
+
+**Small:** De website is op een klein scherm, de tekst staat centraal en verder zijn de teksten klein.
+![image](https://github.com/user-attachments/assets/a37321cf-6745-40f2-a34a-7b284ed8d6de)
+
+**Medium:** De website is op een medium scherm, de tekst word nog steeds centraal gezet door het witruimte te geven aan alle kanten.
+![image](https://github.com/user-attachments/assets/5fd94301-854b-4eb7-bb35-6f659df2f35a)
+
+**Large:** De website is op een large scherm, de tekst word nog steeds centraal gezet door nog meer witruimte te geven. De teksten zijn groter gemaakt om het beter te lezen en je scrollt niet meer in de navbar.
+![image](https://github.com/user-attachments/assets/5f784db2-4e38-476e-9c24-f1b9da9dd0e9)
+
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
