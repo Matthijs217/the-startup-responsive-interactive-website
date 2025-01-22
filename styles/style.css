@@ -82,7 +82,7 @@ header {
         content: '';
         width: 20px;
         height: 20px;
-        background: url(assets/lock.png) no-repeat;
+        background: url(../assets/lock.png) no-repeat;
         background-size: cover;
         margin-right: 1vw;
     }
@@ -210,7 +210,7 @@ main {
         content: '';
         width: 25px;
         height: 25px;
-        background: url(assets/EditPref.png) no-repeat;
+        background: url(../assets/EditPref.png) no-repeat;
         background-size: cover;
         margin-left: 1em;
         transition: 0.2s;
@@ -236,7 +236,7 @@ main {
         content: '';
         width: 35px;
         height: 25px;
-        background: url(assets/remove.png) no-repeat;
+        background: url(../assets/remove.png) no-repeat;
         background-size: cover;
         margin-left: 1em;
         transition: 0.2s;
