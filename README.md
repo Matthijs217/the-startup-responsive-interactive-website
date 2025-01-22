@@ -4,7 +4,7 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 # ABN AMRO Toegankelijkheids pagina
 
-## Beschrijving
+## Beschrijving ##
 
 Op de ABN AMRO toegankelijkheidspagina kan je je lezen over de toeganklijkheid van de ABN AMRO. Hoe het vroeger was en nu. Ook kan je je eigen voorkeuren voor de website aanpasen. Je kan zeggen dat je de website in een donker contrast wilt of dat je links op de pagina in een nieuw venster wilt openen. 
 -
