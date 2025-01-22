@@ -13,14 +13,10 @@
 <body>
     <header>
         <nav class="topnav">
-            <details name="typerekening" class="typerekening">
-                <summary value="prive">Prive</summary>
-                <summary value="zakelijk">Zakelijk</summary>
-                <summary value="privatebanking">Privatebanking</summary>
-            </details>
-
             <img class="logo" src="assets/abnlogo.png" alt="logoabn">
-            <a class="login" href="inloggen.html">Inloggen</a>
+            <div class="topnav-container">
+                <a class="login" href="inloggen.html">Inloggen</a>
+            </div>
         </nav>
         <nav class="bottomnav">
             <details class="navitems">
@@ -71,20 +67,20 @@
     <main>
         <!-- dialog -->
         <dialog>
-            <button class="closeDialog"><img width="40px" src="assets/svgs/closeDialog.svg" alt="closedialog"></button>
+            <button class="closeDialog"><img width= 40px src="assets/svgs/closeDialog.svg" alt="closedialog"></button>
             <h4>Kies jou kleur</h4>
             <div class="toegankelijksknoppen">
-                <button class="lightmode"><img width="50px" src="assets/svgs/lightmode.svg" alt="lightmode"></button>
-                <button class="darkmode"><img width="50px" src="assets/svgs/darkmode.svg" alt="darkmode"></button>
+                <button class="lightmode"><img width= 50px src="assets/svgs/lightmode.svg" alt="lightmode"></button>
+                <button class="darkmode"><img width= 50px src="assets/svgs/darkmode.svg" alt="darkmode"></button>
             </div>
 
             <h4>Gebruiksgemak</h4>
             <label>
-                <input class="reduceAnimationsCheckBox" type="checkbox" name="reduceAnimations">
+                <input class="reduceAnimationsCheckBox" type="checkbox">
                 Animaties verminderen
             </label>
             <label>
-                <input class="externalWindowCheckBox" type="checkbox" name="openExternalInNewWindow">
+                <input class="externalWindowCheckBox" type="checkbox">
                 Open externe website in nieuw venster
             </label>
         </dialog>
@@ -99,20 +95,15 @@
                 <h2>Onze informatiepagina's</h2>
                 <p>Op de informatiepagina's vindt u 2 shortcuts voor screenreaders. Hiermee gaat u snel naar de inhoud
                     van
-                    de website en naar de navigatie. De structuur van het navigatiemenu bestaat uit de productgroepen
-                    betalen, lenen, sparen en verzekeren.</p>
+                    de website en naar de navigatie.</p>
 
                 <h2>Toegankelijkheid van Internet Bankieren</h2>
                 <p>Om Internet Bankieren voor zoveel mogelijk mensen beschikbaar te maken, hebben we een rondleiding
-                    gemaakt
-                    waarin het gebruik van Internet Bankieren wordt uitgelegd. Bovendien bieden we met onze site
-                    ondersteuning aan verschillende browsers. Als er vragen of onduidelijkheden zijn, is onze
-                    telefonische
-                    helpdesk 24 uur per dag, 7 dagen per week bereikbaar.</p>
+                    gemaaktAls er vragen of onduidelijkheden zijn, is onzetelefonische helpdesk 24 uur per dag, 7 dagen per week bereikbaar.</p>
 
                 <div class="dialogButtons">
-                    <button class="showPreference">Wijzig jouw voorkeuren</button>
-                    <button class="removePreference">Jouw voorkeuren verwijderen</button>
+                    <button class="showPreference">Wijzig voorkeuren</button>
+                    <button class="removePreference">Voorkeuren verwijderen</button>
                 </div>
 
                 <h2>Internationaal Toegankelijkheids Symbool</h2>
@@ -138,7 +129,7 @@
     </main>
 
     <aside>
-        <h4>Hulp nodig?</h4>
+        <h3>Hulp nodig?</h3>
         <p>Bekijk het overzicht van alles wat je zelf kunt regelen. Heb je een vraag waar je zelf niet uitkomt? Chat of
             bel ons dan.</p>
     </aside>

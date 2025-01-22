@@ -7,12 +7,14 @@ body {
 
     /* light en dark gebruiekn ipv -white */
     --bg-color-white: #fff; 
+    --bg-color-container: #f5f5f5;
 
     --main-color-hover: #00857a;
     --secondary-color-hover: #E8BF2B;
 
     --text-color-primary: #fff;
     --text-color-secondary: #222;
+
 
     /* FONTS */
 
@@ -44,38 +46,51 @@ header {
     width: 100%;
     position: relative;
     display: flex;
+    align-items: center;
     background-color: var(--bg-color-white);
+    & img {
+        height: 45px;
+        margin-left: 2vw;
+        object-fit: cover;
+    }
+}
+
+.topnav-container {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+    margin-bottom: .5vh;
 }
 
 .typerekening {
-    position: absolute;
-    top: 10%;
-    right: 5%;
     padding: 10px;
-    width: px;
     text-align: left;
     background: none;
     border: none;
     color: var(--text-color-secondary);
 }
 
-.topnav img {
-    height: 100px;
-    width: 150px;
-    margin-left: 2vw;
-    object-fit: cover;
-
-}
-
 .login {
-    position: absolute;
+    display: flex;
+    align-items: center;
     padding: var(--button-padding);
-    top: 50%;
-    right: 5%;
     background-color: var(--secondary-color);
     color: var(--text-color-secondary);
     text-decoration: none;
+    &::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url(/assets/lock.png) no-repeat;
+        background-size: cover;
+        margin-right: 1vw;
+    }
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
 
 .bottomnav {
     background-color: var(--main-color);
@@ -93,6 +108,7 @@ a {
     color: var(--text-color-primary);
     text-decoration: none;
     padding: 1em;
+    white-space: nowrap;
     ul {
         display: flex;
         flex-direction: column;
@@ -115,9 +131,9 @@ a {
 
 summary::after {
     content: '';
-    width: 18px;
-    height: 10px;
-    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+    width: 15px;
+    height: 15px;
+    background: url('../assets/arrows.png') no-repeat;
     background-size: cover;
     margin-left: .75em;
     transition: 0.2s;
@@ -131,17 +147,12 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-.logo {
-    object-fit: cover;
-    height: 100px;
-}
-
 main {
     position: relative;
     display: flex;
     justify-content: center;
     padding: 1em;
-    background-color: #F9F9F9;
+    background-color: var(--bg-color-container);
 }
 
 .container {
@@ -197,8 +208,8 @@ main {
     }
     &::after {
         content: '';
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         background: url(/assets/EditPref.png) no-repeat;
         background-size: cover;
         margin-left: 1em;
@@ -223,11 +234,11 @@ main {
     }
     &::after {
         content: '';
-        width: 25px;
+        width: 35px;
         height: 25px;
         background: url(/assets/remove.png) no-repeat;
         background-size: cover;
-        margin-left: .75em;
+        margin-left: 1em;
         transition: 0.2s;
     }
 }
@@ -331,7 +342,7 @@ dialog {
 aside {
     background-color: var(--main-color-light);
     padding: 1em;
-    h4 {
+    h3 {
         color: var(--text-color-primary);
     }
     p {

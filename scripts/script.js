@@ -34,13 +34,15 @@ document.body.addEventListener('click', (event) => {
 
 lightmode.addEventListener('click', () => {
   body.style.setProperty('--bg-color-white', '#fff');
+  body.style.setProperty('--bg-color-container', '#f5f5f5'); 
   body.style.setProperty('--text-color-secondary', '#222');
   darkmode.classList.remove('isActive');
   lightmode.classList.add('isActive');
 });
 
 darkmode.addEventListener('click', () => {
-  body.style.setProperty('--bg-color-white', '#121c39'); 
+  body.style.setProperty('--bg-color-white', '#1b2951');
+  body.style.setProperty('--bg-color-container', '#121c39'); 
   body.style.setProperty('--main-color', '#00716b'); 
   body.style.setProperty('--text-color-secondary', '#e5e5e5');
   lightmode.classList.remove('isActive');
@@ -64,6 +66,7 @@ removeButton.addEventListener('click', () => {
   externalWindowCheck.checked = false
   body.style.setProperty('--bg-color-white', '#fff');
   body.style.setProperty('--text-color-secondary', '#222');
+  body.style.setProperty('--bg-color-container', '#f5f5f5'); 
   lightmode.classList.remove('isActive');
   darkmode.classList.remove('isActive');
 });
