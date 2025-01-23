@@ -1,7 +1,3 @@
-Ontwerp en maak een responsive website voor een startup.
-
-De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
-
 # ABN AMRO Toegankelijkheids pagina
 
 ## Beschrijving
