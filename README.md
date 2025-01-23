@@ -37,14 +37,36 @@ Bekijk [hier](https://matthijs217.github.io/the-startup-responsive-interactive-w
 
 
 ## Kenmerken
+
+**HTML**
+
+- Details
+Ik heb het <code>details</code> element gebruikt voor de navbar om hem makkelijk uit te laten klappen
+https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L22-L33
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
-**Ademruimte en inspringen**
 
-Ik heb in de HTML er voor gezorgd dat er voldoende witruimte is en dat alles correct [inline](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L73) of op [block](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L129-L133) level zit. 
+**CSS**
 
-**Volgorde en nesten van CSS selectors**
+- ::after
+Ik heb gebruik gemaakt van de after element voor de pijltjes in de navbar, footer, buttons en in de dialog.
+https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L241-L250
 
-Ik heb ervoor gekozen om de elementen in een ander element [direct te nesten](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L207-L225) in de css selectoren. Bij de elementen die gewoon [los staan](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L80-L85
+**JavaScript**
+
+- showModal
+Ik maakte ook gebruik van de showModal functie die bij de HTML tag dialog hoort. Hiermee kan je gemakkelijk een popup maken en dan een styling geven
+https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/scripts/script.js#L15-L18
+
+**Code Conventioes**
+
+HTML
+- Ik heb in de HTML er voor gezorgd dat er voldoende witruimte is en dat alles correct [inline](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L73)
+- of op [block](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L129-L133) level zit. 
+
+Volgorde en nesten van CSS selectors
+
+- Ik heb ervoor gekozen om de elementen in een ander element [direct te nesten](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L207-L225) in de css selectoren.
+- Bij de elementen die gewoon [los staan](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/styles/style.css#L80-L85
 ) van alles doe ik dat niet
 
 ## Bronnen
