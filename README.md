@@ -57,7 +57,7 @@ https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/m
 Ik maakte ook gebruik van de showModal functie die bij de HTML tag dialog hoort. Hiermee kan je gemakkelijk een popup maken en dan een styling geven
 https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/scripts/script.js#L15-L18
 
-## **Code Conventioes**
+## **Code Conventies**
 
 HTML
 - Ik heb in de HTML er voor gezorgd dat er voldoende witruimte is en dat alles correct [inline](https://github.com/Matthijs217/the-startup-responsive-interactive-website/blob/main/index.html#L73)
