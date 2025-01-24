@@ -52,13 +52,20 @@ header {
     width: 100%;
     position: relative;
     display: flex;
+    margin: 1em 0 1em 0;
     align-items: center;
     background-color: var(--bg-color-white);
     & img {
         height: 45px;
-        margin-left: 2vw;
         object-fit: cover;
     }
+    & .logo {
+        margin-left: 2vw;
+        @media (min-width: 760px) {
+            margin-left: 6.5vw;
+        }
+    }
+    
 }
 
 .topnav-container {
@@ -92,11 +99,10 @@ header {
         background-size: cover;
         margin-right: 1vw;
     }
+    @media (min-width: 760px) {
+        margin-right: 4.5vw;
+    }
 }
-
-::-webkit-scrollbar {
-    display: none;
-  }
 
 .bottomnav {
     background-color: var(--main-color);
