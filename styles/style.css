@@ -39,7 +39,13 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg-color-white);
+    & h1 {
+        text-align: center;
+        background-color: red;
+    }
 }
 
 .topnav {
