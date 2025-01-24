@@ -9,7 +9,8 @@ Op de ABN AMRO toegankelijkheidspagina, volledig in de huisstijl, kan je lezen (
 De website is mobile-first gemaakt en is daarom ook volledig responsive. De teskt die centraal staat op de site word groter narmate het scherm groter word. Vanaf 760px word het in een soort container gestopt en krijgt de achtergrondkleur net een andere tint wit / grijs. Hierdoor word de teskt als een soort a4'tje centraal gezet. De navbar krijgt een scrollbar zodat je tussen de verschillende onderwerpen kan scrollen. Ook worden bepaalde headers en teksten groter.
 Je kan zeggen dat je de website in een donker contrast wilt of dat je links op de pagina in een nieuw venster wilt openen.
 
-De website is redelijk toegankelijk. De dropdowns kunnen geopend worden met het toetsenbord, alleen is er een klein contrast probleem bij de footer en de knoppen.
+**Toegankelijkheid**
+De website is redelijk toegankelijk. De dropdowns kunnen geopend worden met het toetsenbord, alleen is er een klein contrast probleem bij de footer en de knoppen. Dit kan makkelijk opgelost worden door een ander contrast te gebruiken voor de kleuren. Verder kan je door de hele pagina heen tabben en is alles leesbaar met verschillende groottes tekst per scherm.
 
 Daarnaast heb ik nog een interactie gemaakt voor het wijzigen van je eigen toegankelijkheids voorkeuren. Je kan ervoor kiezen om bijvoorbeeld dark-mode aan te zetten of juist light-mode. Je kan ook zeggen dat je verminderde animaties wilt of dat je links op de pagina in een nieuw venster wilt openen als je erop klikt.
 
